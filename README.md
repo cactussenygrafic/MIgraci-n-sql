@@ -43,3 +43,5 @@ Migración de dominio via SQL tradicional
 <code>UPDATE `w47fa_icl_translation_status` SET `_prevstate` = REPLACE(`_prevstate`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `_prevstate` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin</code>
 <br><br>
 <code>UPDATE `w47fa_icl_string_translations` SET `value` = REPLACE(`value`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `value` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin</code>
+<br><br>
+<code>UPDATE `w47fa_icl_strings` SET `value` = REPLACE(`value`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `value` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin</code>
