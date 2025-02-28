@@ -22,3 +22,8 @@ Migración de dominio via SQL tradicional
 <br>
 <code>UPDATE `w47fa_yoast_indexable` SET `open_graph_image` = REPLACE(`open_graph_image`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `open_graph_image` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin
 </code>
+<br>
+
+<h2>Post meta</h2>
+<code>UPDATE `w47fa_postmeta` SET `meta_value` = REPLACE(`meta_value`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `meta_value` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin
+</code>
