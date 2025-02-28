@@ -16,3 +16,6 @@ Migración de dominio via SQL tradicional
 <h2>wp_yoast_indexable</h2>
 <code>UPDATE `w47fa_yoast_indexable` SET `permalink` = REPLACE(`permalink`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `permalink` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin
 </code>
+<br>
+<code>UPDATE `w47fa_yoast_indexable` SET `twitter_image` = REPLACE(`twitter_image`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `twitter_image` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin
+</code>
