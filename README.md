@@ -31,5 +31,9 @@ Migración de dominio via SQL tradicional
 <br>
 <h2>Users</h2>
 <code>UPDATE `w47fa_users` SET `user_url` = REPLACE(`user_url`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `user_url` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin</code>
+<br>
+<code>UPDATE `w47fa_usermeta` SET `meta_value` = REPLACE(`meta_value`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `meta_value` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin
+</code>
 
 <br>
+<h2></h2>
