@@ -31,7 +31,7 @@ Migración de dominio via SQL tradicional
 <br>
 <h2>Users</h2>
 <code>UPDATE `w47fa_users` SET `user_url` = REPLACE(`user_url`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `user_url` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin</code>
-<br>
+<br><br>
 <code>UPDATE `w47fa_usermeta` SET `meta_value` = REPLACE(`meta_value`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `meta_value` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin
 </code>
 
@@ -42,3 +42,5 @@ Migración de dominio via SQL tradicional
 <br><br>
 <code>UPDATE `w47fa_icl_translation_status` SET `_prevstate` = REPLACE(`_prevstate`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `_prevstate` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin
 </code>
+<br><br>
+<code>UPDATE `w47fa_icl_string_translations` SET `value` = REPLACE(`value`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `value` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin</code>
