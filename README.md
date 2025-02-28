@@ -6,10 +6,8 @@ Migración de dominio via SQL tradicional
 </code>
 
 <h2>wp_posts</h2>
-<code>
-  UPDATE `w47fa_posts` SET `post_content` = REPLACE(`post_content`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `post_content` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin
-</code>
-
+<code>UPDATE `w47fa_posts` SET `post_content` = REPLACE(`post_content`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `post_content` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin</code>
+<hr/>
 <code>UPDATE `w47fa_posts` SET `guid` = REPLACE(`guid`, 'https://easyrentals.es', 'https://erreproperties.com') WHERE `guid` LIKE '%https://easyrentals.es%' COLLATE utf8mb4_bin</code>
 
 <h2>wp_yoast_seo_links</h2>
